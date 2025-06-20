@@ -5,7 +5,7 @@ FROM ubuntu:20.04
 
 # Install dependencies
 RUN apt-get update && \
-    DEBIAN_FRONTEND="noninteractive" \
+    DEBIAN_FRONTEND="noninteractive\" \
     apt-get install -y \
         build-essential \
         git \
