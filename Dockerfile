@@ -21,6 +21,9 @@ RUN apt-get update && \
         npm && \
     rm -rf /var/lib/apt/lists/*
 
+# Create symbolic link for node to be accessible at expected path
+RUN ln -s /usr/bin/node /usr/local/bin/node
+
 # Update npm and dependencies
 RUN npm install -g npm --loglevel error
 
